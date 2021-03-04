@@ -54,6 +54,7 @@
 		0B2D540825F05F9C005F83EB /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				0B2D541F25F06031005F83EB /* Controllers */,
 				0B2D540925F05F9C005F83EB /* AppDelegate.swift */,
 				0B2D540B25F05F9C005F83EB /* SceneDelegate.swift */,
 				0B2D540F25F05F9C005F83EB /* Main.storyboard */,
@@ -62,6 +63,13 @@
 				0B2D541725F05F9D005F83EB /* Info.plist */,
 			);
 			path = GoodNews;
+			sourceTree = "<group>";
+		};
+		0B2D541F25F06031005F83EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
