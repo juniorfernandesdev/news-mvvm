@@ -16,7 +16,11 @@ class NewsListTableViewController: UITableViewController {
     }
     
     private func setup() {
-    
+        WebService().getArticle(
+            url: URL(
+                string: "https://newsapi.org/v2/top-headlines?country=br&apiKey=dd7ed3bceeb145c6b32a7e75eca3a9bd")!) { _ in
+            print("Passou por aqui")
+        }
     }
     
 }
