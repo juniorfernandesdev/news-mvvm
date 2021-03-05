@@ -13,6 +13,7 @@
 		0B2D541325F05F9C005F83EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D541225F05F9C005F83EB /* Assets.xcassets */; };
 		0B2D541625F05F9C005F83EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2D541425F05F9C005F83EB /* LaunchScreen.storyboard */; };
 		0B2D542125F0609D005F83EB /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D542025F0609D005F83EB /* NewsListTableViewController.swift */; };
+		0B7497A825F2EEDD00E60870 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7497A725F2EEDD00E60870 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0B2D541525F05F9C005F83EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B2D541725F05F9D005F83EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B2D542025F0609D005F83EB /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
+		0B7497A725F2EEDD00E60870 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		0B2D540825F05F9C005F83EB /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				0B7497A625F2EEC000E60870 /* Services */,
 				0B2D541F25F06031005F83EB /* Controllers */,
 				0B2D540925F05F9C005F83EB /* AppDelegate.swift */,
 				0B2D540B25F05F9C005F83EB /* SceneDelegate.swift */,
@@ -73,6 +76,14 @@
 				0B2D542025F0609D005F83EB /* NewsListTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B7497A625F2EEC000E60870 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0B7497A725F2EEDD00E60870 /* WebService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			files = (
 				0B2D540A25F05F9C005F83EB /* AppDelegate.swift in Sources */,
 				0B2D542125F0609D005F83EB /* NewsListTableViewController.swift in Sources */,
+				0B7497A825F2EEDD00E60870 /* WebService.swift in Sources */,
 				0B2D540C25F05F9C005F83EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
