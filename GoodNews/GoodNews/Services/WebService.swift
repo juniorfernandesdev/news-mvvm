@@ -9,18 +9,21 @@ import Foundation
 
 class WebService {
     
-    func getArticle(url: URL, completion: @escaping ([Any]?) -> ())  {
+    func getArticle(url: URL, completion: @escaping ([Article]?) -> ())  {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
-            
             if let error = error {
                 print(error.localizedDescription)
                 completion(nil)
             } else if let data = data {
-                completion([Any]())
-                print(data)
+                do {
+                    let result = try JSONDecoder().decode(NewsApiResult.self, from: data)
+                    completion(result.articles)
+                } catch let errors {
+                    print(errors)
+                    completion(nil)
+                }
             }
-            
         }.resume()
         
     }

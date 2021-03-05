@@ -1,5 +1,5 @@
 //
-//  Article.swift
+//  NewsApiResult.swift
 //  GoodNews
 //
 //  Created by Hoff Henry Pereira da Silva on 05/03/21.
@@ -7,7 +7,6 @@
 
 import Foundation
 
-struct Article: Decodable {
-    let title: String
-    let description: String
+struct NewsApiResult: Decodable {
+    let articles: [Article]
 }
