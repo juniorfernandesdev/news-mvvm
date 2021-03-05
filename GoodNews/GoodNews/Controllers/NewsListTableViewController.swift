@@ -10,5 +10,13 @@ import UIKit
 class NewsListTableViewController: UITableViewController {
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+    
+    private func setup() {
+    
+    }
     
 }
