@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+struct ArticleViewModel {
+    private let article: Article
+    
+    init(_ article: Article) {
+        self.article = article
+    }
+    
+    var articleTitle: String {
+        self.article.title
+    }
+    
+    var articleDescription: String {
+        self.article.description
+    }
+}
